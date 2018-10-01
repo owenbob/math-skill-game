@@ -1,0 +1,78 @@
+.fa-star{
+	margin:0.5em;
+  font-size:24px
+}
+
+span{
+	display:inline-block;
+  margin:0.5em;
+  text-align:center;
+  background-color: #ccc;
+  width:24px;
+  border-radius:50%;
+  cursor:pointer;
+}
+
+.selected{
+	background:color;
+  color:#ddd;
+  cursor:not-allowed;
+}
+.used{
+background-color:#aaddaa;
+color:#99bb99;
+cursor:not-allowed;
+}
+
+
+.center{
+  border-color:red;
+  border-style: solid;
+  padding: 10px;
+  margin: auto;
+  left: 50%;
+  height: 500px;
+  width: 50%;
+}
+
+.game_div{
+  border-color:rebeccapurple;
+  border-style: solid;
+  padding: 10px;
+  margin: auto;
+  padding: 10px;
+  height: 480px;
+}
+ .h3{
+   text-align: center;
+ }
+
+ .stars_div{
+  width: 35%;
+  float: left;
+  padding: 10px;
+  height: 150px;
+ }
+
+ .buttons_div{
+  width: 10%;
+  float: left;
+  padding: 10px;
+  height: 150px;
+ }
+
+ .answer_div{
+  width: 35%;
+  float: left;
+  padding: 10px;
+  height: 150px;
+ }
+
+ .numbers_div{
+  width: 90%;
+  float: left;
+  padding: 10px;
+  height: 150px;
+
+
+ }

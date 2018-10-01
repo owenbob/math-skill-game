@@ -2,6 +2,11 @@
 
 ## Specifications
 -  A simple math math game where you play by selecting numbers that sum up  to the number of stars.
+
+## Hosted URL
+```
+https://math-skill-game.herokuapp.com/
+```
 ## Installation
 First clone this repository
 ```

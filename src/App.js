@@ -83,7 +83,7 @@ const Numbers= (props) =>{
   <div className="card text-center">
     <div>
     {Number.list.map((number,i)=> 
-    <span className={numberClassName(number)}
+    <span key={i} className={numberClassName(number)}
     onClick={()=>props.selectNumber(number)}>
     {number}
     </span>
@@ -97,6 +97,7 @@ Number.list = range.range(1,10)
 
 const DoneFrame = (props) =>{
 	return(
+
   <div className="text-center">
   <h2>{props.doneStatus}</h2>
   <button 
@@ -186,7 +187,7 @@ class Game extends React.Component{
   
   
   
-	possibleSolutions = ({ randomNumberOfStars,usedNumbers}) => {
+	possibleSolutions = ({ randomNumberOfStars,usedNumbers }) => {
 	const possibleNumbers = range(1,10).filter(number => 
 	usedNumbers.IndexOf(number) === 1
 	);
@@ -199,7 +200,7 @@ class Game extends React.Component{
     return { doneStatus:"Done! Nice"};
     }
     if(prevState.reDraws === 0 && !this.possibleSolutions(prevState)){
-    return {donestatus:"Game Over!"}
+    return {doneStatus:"Game Over!"};
     } 
     });
   }
